@@ -11,7 +11,7 @@ class Authenticate extends Middleware
 {
     public function handle($request, Closure $next, ...$guards)
     {
-        if (Auth::check()) {
+        if (Auth::check() && Auth::user()->is_admin) {
             return parent::handle($request, $next, $guards);
         } else {
             return Redirect::to("/giris");

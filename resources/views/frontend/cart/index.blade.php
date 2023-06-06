@@ -25,9 +25,6 @@
                             </li>
                             @auth()
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/hesabim">Hesabım</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="/cikis">Çıkış</a>
                                 </li>
                             @else
